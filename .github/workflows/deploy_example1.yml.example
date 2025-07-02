@@ -31,12 +31,3 @@ jobs:
       
       - name: Build page
         run: npm run build
-
-  notification: # Simular un post script
-    needs: build
-    runs-on: ubuntu-latest
-    if: always()
-
-    steps:
-      - name: hola
-        run: echo "Hola"
